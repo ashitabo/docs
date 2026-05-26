@@ -8,7 +8,7 @@ type Props = ComponentProps<typeof Link> & {
 	className?: string
 }
 
-function InlineLink({ children, className, ...props }: Props) {
+const InlineLink = ({ children, className, ...props }: Props) => {
 	return (
 		<Link {...props} className={clsx(styles.inlineLink, className)}>
 			<span className={styles.label}>{children}</span>

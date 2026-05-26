@@ -42,7 +42,7 @@ const FeatureList: FeatureItem[] = [
 	},
 ]
 
-function Feature({ title, img, description }: FeatureItem) {
+const Feature = ({ title, img, description }: FeatureItem) => {
 	return (
 		<div className={clsx('col col--4')}>
 			<div className="text--center">
@@ -58,7 +58,7 @@ function Feature({ title, img, description }: FeatureItem) {
 	)
 }
 
-export default function HomepageFeatures(): ReactNode {
+const HomepageFeatures = () => {
 	return (
 		<section className={styles.features}>
 			<div className="container">
@@ -71,3 +71,5 @@ export default function HomepageFeatures(): ReactNode {
 		</section>
 	)
 }
+
+export default HomepageFeatures

@@ -7,7 +7,7 @@ type Props = {
 	className?: string
 }
 
-function StepList({ children, className }: Props) {
+const StepList = ({ children, className }: Props) => {
 	return <div className={clsx(styles.stepList, className)}>{children}</div>
 }
 

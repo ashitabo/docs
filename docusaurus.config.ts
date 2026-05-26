@@ -79,7 +79,6 @@ const config: Config = {
 					position: 'left',
 					label: 'ドキュメント',
 				},
-				{ to: '/blog', label: 'ブログ', position: 'left' },
 				{
 					href: 'https://github.com/ashitaboliff/docs',
 					label: 'GitHub',
@@ -102,10 +101,6 @@ const config: Config = {
 				{
 					title: 'More',
 					items: [
-						{
-							label: 'Blog',
-							to: '/blog',
-						},
 						{
 							label: 'ロードマップ',
 							href: 'https://www.ashitabo.net/changelog',
