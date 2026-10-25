@@ -25,17 +25,17 @@ jobs:
         with:
           version: 10.12.4
 
-      - name: install dependencies
-        run: pnpm install --no-frozen-lockfile
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24.22.1
           cache: pnpm
 
       - name: Enable Corepack
         run: corepack enable
+      - name: install dependencies
+        run: pnpm install --no-frozen-lockfile
       - name: Build site
         run: pnpm run build
       - name: Upload artifact
